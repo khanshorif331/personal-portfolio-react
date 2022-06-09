@@ -8,6 +8,7 @@ import Navbar from './components/Shared/Navbar'
 import ReactTyped from 'react-typed'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import Home from './components/Home/Home'
 
 function App() {
 	const particlesInit = useCallback(main => {
@@ -22,13 +23,14 @@ function App() {
 		<div>
 			<Particles options={particlesOptions} init={particlesInit} />
 			<Navbar></Navbar>
-			<span
+			<Home></Home>
+			{/* <span
 				// style={{ color: '#7026b9' }}
 				className='text-purple-500 text-3xl font-bold mx-auto block text-center uppercase'
 			>
 				Shoriful Islam
-			</span>{' '}
-			<ReactTyped
+			</span>{' '} */}
+			{/* <ReactTyped
 				className='text-red-500 text text-3xl'
 				strings={['Here you can find anything', 'Helloo', 'Shorif']}
 				typeSpeed={40}
@@ -36,7 +38,6 @@ function App() {
 				loop
 			/>
 			<br />
-			{/* <div className='text-white bg-red-400'> */}
 			<ReactTyped
 				className='text-2xl text-red-500'
 				strings={['I am Developer', 'I am Learner', 'I am Programmer']}
@@ -45,7 +46,6 @@ function App() {
 				attr='placeholder'
 				loop
 			>
-				{/* <p className='text-white'> hello</p> */}
 				<input type='text' className='text-red-500 bg-black text-center' />
 			</ReactTyped>
 			<br />
@@ -57,10 +57,8 @@ function App() {
 				attr='placeholder'
 				loop
 			>
-				{/* <p className='text-white'> hello</p> */}
 				<input type='text' className='text-red-500 bg-black text-center' />
-			</ReactTyped>
-			{/* </div> */}
+			</ReactTyped> */}
 			<div data-aos='fade-up' data-aos-anchor-placement='center-center'>
 				<h1 className='text-white'>Hello</h1>
 			</div>

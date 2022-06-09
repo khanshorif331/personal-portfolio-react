@@ -1,27 +1,57 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 const Navbar = () => {
 	const navigation = (
 		<>
 			<li>
-				<a className='hover:text-purple-400'>HOME</a>
+				{/* <motion.div animate={{ scale: 2 }} transition={{ duration: 0.5 }} /> */}
+				<motion.a
+					whileHover={{ scale: 1.3 }}
+					whileTap={{ scale: 1 }}
+					transition={{ duration: 0.1 }}
+					className='hover:text-purple-400'
+				>
+					HOME
+				</motion.a>
 			</li>
 			<li>
-				<a className='hover:text-purple-400'>ABOUT ME</a>
+				<motion.a
+					whileHover={{ scale: 1.3 }}
+					whileTap={{ scale: 1 }}
+					transition={{ duration: 0.1 }}
+					className='hover:text-purple-400'
+				>
+					ABOUT ME
+				</motion.a>
 			</li>
 			<li>
-				<a className='hover:text-purple-400'>PORTFOLIO</a>
+				<motion.a
+					whileHover={{ scale: 1.3 }}
+					whileTap={{ scale: 1 }}
+					transition={{ duration: 0.1 }}
+					className='hover:text-purple-400'
+				>
+					PORTFOLIO
+				</motion.a>
 			</li>
 			<li>
-				<a className='hover:text-purple-400'>ABOUT</a>
+				<motion.a
+					whileHover={{ scale: 1.3 }}
+					whileTap={{ scale: 1 }}
+					transition={{ duration: 0.1 }}
+					className='hover:text-purple-400'
+				>
+					CONTACT
+				</motion.a>
 			</li>
-			<li className='bg-purple-600 px-8 py-0 rounded-3xl'>
+			<li className='bg-purple-600 px-8 py-0 rounded-3xl hover:border-2 border-purple-600 hover:bg-black hover:text-purple-500'>
 				<button>RESUME</button>
 			</li>
 		</>
 	)
 	return (
-		<div>
+		<div className='w-full'>
 			<div class='navbar bg-black flex justify-between md:px-14 md:py-6'>
 				<div class='navbar-start'>
 					<div class='dropdown'>
@@ -48,9 +78,19 @@ const Navbar = () => {
 							{navigation}
 						</ul>
 					</div>
-					<a class='btn btn-ghost uppercase text-3xl text-white'>
-						<span className='text-purple-500'>SHORIF </span> Islam
-					</a>
+					<motion.a
+						animate={{
+							scale: [1, 2, 2, 1, 1],
+							rotate: [0, 0, 270, 270, 0],
+							borderRadius: ['20%', '20%', '50%', '50%', '20%'],
+						}}
+						// animate={{ scale: 1.2 }}
+						// transition={{ duration: 1.5 }}
+						class='btn btn-ghost uppercase text-3xl text-white overflow-hidden'
+					>
+						<span className='text-purple-500'>SHORIF </span>{' '}
+						<span className='hidden md:block'>Islam</span>
+					</motion.a>
 				</div>
 				<div class='navbar-center hidden lg:flex'>
 					<ul class='menu menu-horizontal p-0 text-white'>{navigation}</ul>
