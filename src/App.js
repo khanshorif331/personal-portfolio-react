@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react'
+import React, { useEffect, useCallback } from 'react'
 import Particles from 'react-tsparticles'
 import { loadFull } from 'tsparticles'
 import logo from './logo.svg'
@@ -6,23 +6,34 @@ import './App.css'
 import particlesOptions from './particles.json'
 import Navbar from './components/Shared/Navbar'
 import ReactTyped from 'react-typed'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+// import { useEffect } from 'react/cjs/react.production.min'
+
+// AOS.init()
 
 function App() {
 	const particlesInit = useCallback(main => {
 		loadFull(main)
 	}, [])
+	useEffect(() => {
+		AOS.init({ duration: 2000 })
+		AOS.refresh()
+	}, [])
 
 	return (
-		<div className='App'>
+		<div>
 			<Particles options={particlesOptions} init={particlesInit} />
 			<Navbar></Navbar>
+			<span className='text-red-500 text-3xl'>Shorif</span>{' '}
 			<ReactTyped
-				className='text-red-500'
-				strings={['Here you can find anything']}
+				className='text-red-500 text text-3xl'
+				strings={['Here you can find anything', 'Helloo', 'Shorif']}
 				typeSpeed={40}
+				backSpeed={50}
+				loop
 			/>
 			<br />
-
 			{/* <div className='text-white bg-red-400'> */}
 			<ReactTyped
 				className='text-2xl text-red-500'
@@ -48,6 +59,9 @@ function App() {
 				<input type='text' className='text-red-500 bg-black text-center' />
 			</ReactTyped>
 			{/* </div> */}
+			<div data-aos='fade-up' data-aos-anchor-placement='center-center'>
+				<h1 className='text-white'>Hello</h1>
+			</div>
 		</div>
 	)
 }
