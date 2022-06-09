@@ -8,9 +8,6 @@ import Navbar from './components/Shared/Navbar'
 import ReactTyped from 'react-typed'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-// import { useEffect } from 'react/cjs/react.production.min'
-
-// AOS.init()
 
 function App() {
 	const particlesInit = useCallback(main => {
