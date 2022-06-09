@@ -1,19 +1,20 @@
 import React from 'react'
 import ReactTyped from 'react-typed'
 import bannerImg from '../../assets/images/banner.png'
+import Button from '../Shared/Button'
 
 const Banner = () => {
 	return (
-		<div className='grid grid-cols-1 md:grid-cols-2 mx-16 min-h-screen place-items-center'>
+		<div className='grid grid-cols-1 md:grid-cols-2 mx-16 max-h[400px] place-items-center gap-8'>
 			<div>
 				<h1 className='text-white'>
-					<span className='text-purple-500'>Hello</span>, I'M,
+					Hello,<span className='text-purple-500'>I'M,</span>
 				</h1>
 				<h1 className='text-7xl font-bold text-white'>
 					SHORIFUL <span className='text-purple-500'>ISLAM</span>
 				</h1>
 				<ReactTyped
-					className='text-purple-500 font-bold text text-3xl'
+					className='text-purple-500 font-bold text text-3xl mt-2'
 					strings={[
 						'A Mern Stack DEVELOPER',
 						'Passionate PROGRAMMER',
@@ -23,10 +24,20 @@ const Banner = () => {
 					backSpeed={50}
 					loop
 				/>
+				<p className='text-white mt-4'>
+					I'm passionate web developer with a focus oon web development
+					with Javascript.
+				</p>
+				<div className='mt-8'>
+					<Button>CONTACT</Button>
+					<span className='ml-2'>
+						<Button>RESUME</Button>
+					</span>
+				</div>
 			</div>
 			<div>
-				<div className='text-white w-full'>
-					<img src={bannerImg} alt='' />
+				<div className='text-white w-full hidden md:block'>
+					<img className='w-full' src={bannerImg} alt='Reading svg' />
 				</div>
 			</div>
 		</div>
