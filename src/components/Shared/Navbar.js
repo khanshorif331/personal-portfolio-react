@@ -71,28 +71,26 @@ const Navbar = () => {
 								/>
 							</svg>
 						</label>
+						{/* for mobile */}
 						<ul
 							tabindex='0'
-							class='menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52'
+							class='navbar-end menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52'
 						>
 							{navigation}
 						</ul>
 					</div>
 					<motion.a
-						animate={{
-							scale: [1, 2, 2, 1, 1],
-							rotate: [0, 0, 270, 270, 0],
-							borderRadius: ['20%', '20%', '50%', '50%', '20%'],
-						}}
-						// animate={{ scale: 1.2 }}
-						// transition={{ duration: 1.5 }}
+						whileHover={{ scale: 1.3 }}
+						whileTap={{ scale: 1 }}
+						transition={{ duration: 0.1 }}
 						class='btn btn-ghost uppercase text-3xl text-white overflow-hidden'
 					>
 						<span className='text-purple-500'>SHORIF </span>{' '}
-						<span className='hidden md:block'>Islam</span>
+						<span className=''>Islam</span>
 					</motion.a>
 				</div>
 				<div class='navbar-center hidden lg:flex'>
+					{/* for largee device */}
 					<ul class='menu menu-horizontal p-0 text-white'>{navigation}</ul>
 				</div>
 			</div>

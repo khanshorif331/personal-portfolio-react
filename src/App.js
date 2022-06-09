@@ -24,44 +24,18 @@ function App() {
 			<Particles options={particlesOptions} init={particlesInit} />
 			<Navbar></Navbar>
 			<Home></Home>
-			{/* <span
-				// style={{ color: '#7026b9' }}
-				className='text-purple-500 text-3xl font-bold mx-auto block text-center uppercase'
-			>
-				Shoriful Islam
-			</span>{' '} */}
+
 			{/* <ReactTyped
 				className='text-red-500 text text-3xl'
 				strings={['Here you can find anything', 'Helloo', 'Shorif']}
 				typeSpeed={40}
 				backSpeed={50}
 				loop
-			/>
-			<br />
-			<ReactTyped
-				className='text-2xl text-red-500'
-				strings={['I am Developer', 'I am Learner', 'I am Programmer']}
-				typeSpeed={40}
-				backSpeed={50}
-				attr='placeholder'
-				loop
-			>
-				<input type='text' className='text-red-500 bg-black text-center' />
-			</ReactTyped>
-			<br />
-			<ReactTyped
-				className='text-2xl text-red-500'
-				strings={['I am Developer', 'I am Learner', 'I am Programmer']}
-				typeSpeed={40}
-				backSpeed={50}
-				attr='placeholder'
-				loop
-			>
-				<input type='text' className='text-red-500 bg-black text-center' />
-			</ReactTyped> */}
-			<div data-aos='fade-up' data-aos-anchor-placement='center-center'>
+			/> */}
+
+			{/* <div data-aos='fade-up' data-aos-anchor-placement='center-center'>
 				<h1 className='text-white'>Hello</h1>
-			</div>
+			</div> */}
 		</div>
 	)
 }
