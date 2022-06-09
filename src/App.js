@@ -22,7 +22,12 @@ function App() {
 		<div>
 			<Particles options={particlesOptions} init={particlesInit} />
 			<Navbar></Navbar>
-			<span className='text-red-500 text-3xl'>Shorif</span>{' '}
+			<span
+				// style={{ color: '#7026b9' }}
+				className='text-purple-500 text-3xl font-bold mx-auto block text-center uppercase'
+			>
+				Shoriful Islam
+			</span>{' '}
 			<ReactTyped
 				className='text-red-500 text text-3xl'
 				strings={['Here you can find anything', 'Helloo', 'Shorif']}
