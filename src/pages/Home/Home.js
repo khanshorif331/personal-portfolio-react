@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Banner from './Banner'
+import AboutSection from './AboutSection'
 
 const Home = () => {
 	return (
@@ -14,6 +15,7 @@ const Home = () => {
 				className='w-[400px] h-[400px] bg-red-500 mx-auto'
 			></motion.div> */}
 			<Banner></Banner>
+			<AboutSection></AboutSection>
 		</div>
 	)
 }
