@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactTyped from 'react-typed'
 import bannerImg from '../../assets/images/banner.png'
-import Button from '../Shared/Button'
+import Button from '../../components/Button'
+// import Button from '../../components/Button'
 
 const Banner = () => {
 	return (
@@ -18,6 +19,7 @@ const Banner = () => {
 					strings={[
 						'A Mern Stack DEVELOPER',
 						'Passionate PROGRAMMER',
+						'Curious To Technologies',
 						'Quick LEARNER',
 					]}
 					typeSpeed={40}

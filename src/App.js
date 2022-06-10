@@ -8,7 +8,9 @@ import Navbar from './components/Shared/Navbar'
 import ReactTyped from 'react-typed'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import Home from './components/Home/Home'
+import Home from './pages/Home/Home'
+import { Routes, Route, useParams } from 'react-router-dom'
+import About from './pages/About/About'
 
 function App() {
 	const particlesInit = useCallback(main => {
@@ -23,19 +25,11 @@ function App() {
 		<div>
 			<Particles options={particlesOptions} init={particlesInit} />
 			<Navbar></Navbar>
-			<Home></Home>
-
-			{/* <ReactTyped
-				className='text-red-500 text text-3xl'
-				strings={['Here you can find anything', 'Helloo', 'Shorif']}
-				typeSpeed={40}
-				backSpeed={50}
-				loop
-			/> */}
-
-			{/* <div data-aos='fade-up' data-aos-anchor-placement='center-center'>
-				<h1 className='text-white'>Hello</h1>
-			</div> */}
+			<Routes>
+				<Route path='/' element={<Home></Home>}></Route>
+				<Route path='/home' element={<Home></Home>}></Route>
+				<Route path='/about' element={<About></About>}></Route>
+			</Routes>
 		</div>
 	)
 }

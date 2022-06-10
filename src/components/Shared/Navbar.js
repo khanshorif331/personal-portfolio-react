@@ -1,49 +1,56 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { Link, NavLink } from 'react-router-dom'
+import CustomLink from '../CustomLink'
 
 const Navbar = () => {
 	const navigation = (
 		<>
 			<li>
 				{/* <motion.div animate={{ scale: 2 }} transition={{ duration: 0.5 }} /> */}
-				<motion.a
-					whileHover={{ scale: 1.3 }}
-					whileTap={{ scale: 1 }}
-					transition={{ duration: 0.1 }}
-					className='hover:text-purple-400'
-				>
-					HOME
-				</motion.a>
+				<CustomLink to='/'>
+					<motion.div
+						whileHover={{ scale: 1.3 }}
+						whileTap={{ scale: 1 }}
+						transition={{ duration: 0.1 }}
+						className='hover:text-purple-400'
+						to='/home'
+					>
+						HOME
+					</motion.div>
+				</CustomLink>
 			</li>
 			<li>
-				<motion.a
-					whileHover={{ scale: 1.3 }}
-					whileTap={{ scale: 1 }}
-					transition={{ duration: 0.1 }}
-					className='hover:text-purple-400'
-				>
-					ABOUT ME
-				</motion.a>
+				<CustomLink to='/about'>
+					<motion.div
+						whileHover={{ scale: 1.3 }}
+						whileTap={{ scale: 1 }}
+						transition={{ duration: 0.1 }}
+						className='hover:text-purple-400'
+					>
+						ABOUT ME
+					</motion.div>
+				</CustomLink>
 			</li>
 			<li>
-				<motion.a
+				<motion.div
 					whileHover={{ scale: 1.3 }}
 					whileTap={{ scale: 1 }}
 					transition={{ duration: 0.1 }}
 					className='hover:text-purple-400'
 				>
 					PORTFOLIO
-				</motion.a>
+				</motion.div>
 			</li>
 			<li>
-				<motion.a
+				<motion.div
 					whileHover={{ scale: 1.3 }}
 					whileTap={{ scale: 1 }}
 					transition={{ duration: 0.1 }}
 					className='hover:text-purple-400'
 				>
 					CONTACT
-				</motion.a>
+				</motion.div>
 			</li>
 			<li className='bg-purple-600 px-8 py-0 rounded-3xl hover:border-2 border-purple-600 hover:bg-black hover:text-purple-500'>
 				<button>RESUME</button>

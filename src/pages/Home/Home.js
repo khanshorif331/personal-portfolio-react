@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import Banner from '../Banner/Banner'
+import Banner from './Banner'
 
 const Home = () => {
 	return (
