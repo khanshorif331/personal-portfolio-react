@@ -20,6 +20,11 @@ const AboutSection = () => {
 					am familiar with developing with provided layouts.I'm always
 					improving myself with each project.
 				</p>
+				<p className='mt-4'>
+					I want to be a very good mern stack developer.I would love to see
+					myself in a big tech giant company.I hope I can achieve that goal
+					soon.
+				</p>
 				<p className='my-4 font bold text-purple-400 text-2xl'>
 					Here are my main skills:
 				</p>
@@ -56,8 +61,12 @@ const AboutSection = () => {
 					/>
 				</div>
 			</div>
-			<div>
-				<h1>Heelo</h1>
+			<div className='p-8 md:p-16 w-full h-full'>
+				<img
+					className='w-full h-full'
+					src='https://flatlogic.github.io/light-blue-vue-admin/img/a5.84f014f0.jpg'
+					alt=''
+				/>
 			</div>
 		</section>
 	)
