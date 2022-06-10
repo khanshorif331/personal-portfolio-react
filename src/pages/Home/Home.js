@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import Banner from './Banner'
 import AboutSection from './AboutSection'
+import Services from './Services/Services'
 
 const Home = () => {
 	return (
@@ -16,6 +17,7 @@ const Home = () => {
 			></motion.div> */}
 			<Banner></Banner>
 			<AboutSection></AboutSection>
+			<Services></Services>
 		</div>
 	)
 }

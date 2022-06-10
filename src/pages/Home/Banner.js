@@ -11,7 +11,7 @@ const Banner = () => {
 				<h1 className='text-white'>
 					Hello,<span className='text-purple-500'>I'M,</span>
 				</h1>
-				<h1 className='text-7xl font-bold text-white'>
+				<h1 className='text-5xl md:text-7xl font-bold text-white'>
 					SHORIFUL <span className='text-purple-500'>ISLAM</span>
 				</h1>
 				<ReactTyped
