@@ -53,7 +53,12 @@ const Navbar = () => {
 				</motion.div>
 			</li>
 			<li className='bg-purple-600 px-8 py-0 rounded-3xl hover:border-2 border-purple-600 hover:bg-black hover:text-purple-500'>
-				<button>RESUME</button>
+				<a
+					href='https://drive.google.com/uc?export=download&id=14WmYp-zdwhhB_Uv9W7i6M6V2V46GVXpO
+'
+				>
+					<button>RESUME</button>
+				</a>
 			</li>
 		</>
 	)

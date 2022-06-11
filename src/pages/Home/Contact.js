@@ -1,6 +1,8 @@
 import React from 'react'
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
 
+// https://drive.google.com/file/d/14WmYp-zdwhhB_Uv9W7i6M6V2V46GVXpO/view?usp=sharing
+
 const Contact = () => {
 	return (
 		<section>
@@ -41,7 +43,6 @@ const Contact = () => {
 					{/* foorm start */}
 
 					<div class='text-white w-full px-6'>
-						{/* <div class='card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100'> */}
 						<div class='card-body'>
 							<div class='form-control'>
 								<label class='label '>
@@ -79,8 +80,6 @@ const Contact = () => {
 								<button class='btn btn-primary'>Send</button>
 							</div>
 						</div>
-						{/* </div> */}
-						{/* </div> */}
 					</div>
 
 					{/* form end */}
