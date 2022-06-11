@@ -11,6 +11,8 @@ import 'aos/dist/aos.css'
 import Home from './pages/Home/Home'
 import { Routes, Route, useParams } from 'react-router-dom'
 import About from './pages/About/About'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 function App() {
 	const particlesInit = useCallback(main => {
@@ -30,6 +32,7 @@ function App() {
 				<Route path='/home' element={<Home></Home>}></Route>
 				<Route path='/about' element={<About></About>}></Route>
 			</Routes>
+			<ToastContainer></ToastContainer>
 		</div>
 	)
 }
