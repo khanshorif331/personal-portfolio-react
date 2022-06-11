@@ -26,7 +26,7 @@ const ManufactureDetail = () => {
 			<h1 className='text-center text-2xl  md:text-5xl font-bold text-purple-500  mt-4'>
 				Manufacturer Website
 			</h1>
-			<p className='text-center'>Full Stack</p>
+			<p className='text-center'>Full Stack Project</p>
 			<div className='w-full'>
 				<Swiper
 					effect={'coverflow'}

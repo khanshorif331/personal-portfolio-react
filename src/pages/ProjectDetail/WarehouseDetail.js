@@ -23,7 +23,10 @@ import { Autoplay, EffectCoverflow, Pagination } from 'swiper'
 const ProjectDetail = () => {
 	return (
 		<div className='text-white'>
-			<h1>Helloo warehouse</h1>
+			<h1 className='text-center text-2xl  md:text-5xl font-bold text-purple-500  mt-4'>
+				Bike Warehouse
+			</h1>
+			<p className='text-center'>Full Stack Project</p>
 			<div>
 				<Swiper
 					effect={'coverflow'}
@@ -76,6 +79,76 @@ const ProjectDetail = () => {
 					</SwiperSlide>
 				</Swiper>
 			</div>
+			<section className='text-white md:w-3/4 mx-auto my-4 '>
+				<div className='w-full md:w-1/2 mx-auto flex justify-around flex-wrap'>
+					<a
+						className='border-purple-500 border-b-2 hover:text-purple-500 font-bold'
+						href='https://warehouse-management-3798b.web.app/'
+						target='_blank'
+					>
+						Live Website
+					</a>
+					<a
+						className='border-purple-500 border-b-2 hover:text-purple-500 font-bold'
+						href='https://github.com/khanshorif331/warehouse-management-client-public'
+						target='_blank'
+					>
+						Client Side Code
+					</a>
+					<a
+						className='border-purple-500 border-b-2 hover:text-purple-500 font-bold'
+						href='https://github.com/khanshorif331/warehouse-management-server-public'
+						target='_blank'
+					>
+						Server Side Code
+					</a>
+				</div>
+				<div className='mt-6 p-6 w-full'>
+					<span className='border-b-2 border-purple-500'>
+						Technologies used in this project :
+					</span>
+					<p className='mt-4'>
+						HTML,CSS,Javascript,React,Tailwind,Firebase,React Query,React
+						Hook Form,MongoDB,Express, DaisyUI
+					</p>
+				</div>
+				<div className='mt-2 p-6 w-full text-white'>
+					<span className='border-b-2 border-purple-500'>
+						Key Features :
+					</span>
+					<ul>
+						<li>
+							<p className='my-2'>
+								Created a secured authentication system.After logging in
+								the user can have some extra routes to see
+							</p>
+						</li>
+						<li>
+							<p className='my-2'>
+								Users can place orders and in manage inventories
+								route,users can manage all their orders and delete
+								orders from there.
+							</p>
+						</li>
+						<li>
+							<p className='my-2'>
+								Also users can add new products and also can see all his
+								orders in my items page
+							</p>
+						</li>
+						<li>
+							<p className='my-2'>
+								There is a inventory in which users can see their
+								profile,orders and manage their orders.
+							</p>
+						</li>
+
+						<li>
+							<p className='my-2'>All the data used from mongodb.</p>
+						</li>
+					</ul>
+				</div>
+			</section>
 		</div>
 	)
 }
