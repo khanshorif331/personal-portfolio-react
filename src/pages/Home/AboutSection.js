@@ -2,7 +2,10 @@ import React from 'react'
 
 const AboutSection = () => {
 	return (
-		<section className='grid grid-cols-1 md:grid-cols-2 place-items-center text-white'>
+		<section
+			id='#about'
+			className='grid grid-cols-1 md:grid-cols-2 place-items-center text-white'
+		>
 			<div className='p-8 md:p-16'>
 				<p>Let me introduce myself</p>
 				<span className='text-4xl font-bold border-b-2 pb-0'>

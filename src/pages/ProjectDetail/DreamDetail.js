@@ -6,8 +6,6 @@ import dreamImg1 from '../../assets/images/final/ass-10/10.1.png'
 import dreamImg2 from '../../assets/images/final/ass-10/10.2.png'
 import dreamImg3 from '../../assets/images/final/ass-10/10.3.png'
 import dreamImg4 from '../../assets/images/final/ass-10/10.4.png'
-// import warImg5 from '../../assets/images/final/ass-11/11.5.png'
-// import warImg6 from '../../assets/images/final/ass-11/11.6.png'
 
 // Import Swiper styles
 import 'swiper/css'
@@ -92,13 +90,6 @@ const DreamDetail = () => {
 					>
 						Client Side Code
 					</a>
-					{/* <a
-						className='border-purple-500 border-b-2 hover:text-purple-500 font-bold'
-						href='https://github.com/khanshorif331/manufacturer-website-server-public'
-						target='_blank'
-					>
-						Server Side Code
-					</a> */}
 				</div>
 				<div className='mt-6 p-6 w-full'>
 					<span className='border-b-2 border-purple-500'>

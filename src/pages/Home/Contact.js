@@ -35,7 +35,7 @@ const Contact = () => {
 			)
 	}
 	return (
-		<section>
+		<section className='mb-6'>
 			<div className='text-white text-center mb-12'>
 				<p>get in touch</p>
 				<p className='text-5xl font-bold text-purple-500'>CONTACT</p>

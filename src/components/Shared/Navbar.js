@@ -8,7 +8,7 @@ const Navbar = () => {
 		<>
 			<li>
 				{/* <motion.div animate={{ scale: 2 }} transition={{ duration: 0.5 }} /> */}
-				<CustomLink to='/'>
+				<CustomLink to='/home'>
 					<motion.div
 						whileHover={{ scale: 1.3 }}
 						whileTap={{ scale: 1 }}
@@ -33,24 +33,28 @@ const Navbar = () => {
 				</CustomLink>
 			</li>
 			<li>
-				<motion.div
-					whileHover={{ scale: 1.3 }}
-					whileTap={{ scale: 1 }}
-					transition={{ duration: 0.1 }}
-					className='hover:text-purple-400'
-				>
-					PORTFOLIO
-				</motion.div>
+				<CustomLink to='/projects'>
+					<motion.div
+						whileHover={{ scale: 1.3 }}
+						whileTap={{ scale: 1 }}
+						transition={{ duration: 0.1 }}
+						className='hover:text-purple-400'
+					>
+						PROJECTS
+					</motion.div>
+				</CustomLink>
 			</li>
 			<li>
-				<motion.div
-					whileHover={{ scale: 1.3 }}
-					whileTap={{ scale: 1 }}
-					transition={{ duration: 0.1 }}
-					className='hover:text-purple-400'
-				>
-					CONTACT
-				</motion.div>
+				<CustomLink to='/blogs'>
+					<motion.div
+						whileHover={{ scale: 1.3 }}
+						whileTap={{ scale: 1 }}
+						transition={{ duration: 0.1 }}
+						className='hover:text-purple-400'
+					>
+						BLOGS
+					</motion.div>
+				</CustomLink>
 			</li>
 			<li className='bg-purple-600 px-8 py-0 rounded-3xl hover:border-2 border-purple-600 hover:bg-black hover:text-purple-500'>
 				<a
@@ -64,7 +68,7 @@ const Navbar = () => {
 	)
 	return (
 		<div className='w-full'>
-			<div className='navbar bg-black flex justify-between md:px-14 md:py-6'>
+			<div className='navbar bg-black flex justify-between md:px-14 md:py-6 fixed z-20'>
 				<div className='navbar-start'>
 					<div className='dropdown'>
 						<label tabIndex='0' className='btn btn-ghost lg:hidden'>

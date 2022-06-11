@@ -16,6 +16,10 @@ import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import ManufactureDetail from './pages/ProjectDetail/ManufactureDetail'
 import DreamDetail from './pages/ProjectDetail/DreamDetail'
+import AboutSection from './pages/Home/AboutSection'
+import Projects from './pages/Home/Projects/Projects'
+import Blogs from './pages/Blogs/Blogs'
+import Footer from './components/Shared/Footer'
 
 function App() {
 	const particlesInit = useCallback(main => {
@@ -34,6 +38,8 @@ function App() {
 				<Route path='/' element={<Home></Home>}></Route>
 				<Route path='/home' element={<Home></Home>}></Route>
 				<Route path='/about' element={<About></About>}></Route>
+				<Route path='/projects' element={<Projects></Projects>}></Route>
+				<Route path='/blogs' element={<Blogs></Blogs>}></Route>
 				<Route
 					path='/manufactureDetail'
 					element={<ManufactureDetail></ManufactureDetail>}
@@ -47,6 +53,7 @@ function App() {
 					element={<DreamDetail></DreamDetail>}
 				></Route>
 			</Routes>
+			<Footer></Footer>
 			<ToastContainer></ToastContainer>
 		</div>
 	)
