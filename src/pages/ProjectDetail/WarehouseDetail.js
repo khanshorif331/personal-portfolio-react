@@ -1,5 +1,5 @@
 // import React from 'react'
-import React, { useRef, useState } from 'react'
+import React from 'react'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
 import warImg1 from '../../assets/images/final/ass-11/11.1.png'
@@ -60,23 +60,20 @@ const ProjectDetail = () => {
 					className='mySwiper'
 				>
 					<SwiperSlide>
-						<img src={warImg1} />
+						<img src={warImg1} alt='imagetel' />
 					</SwiperSlide>
 					<SwiperSlide>
-						<img src={warImg2} />
+						<img src={warImg2} alt='imagenoo' />
 					</SwiperSlide>
 					<SwiperSlide>
-						<img src={warImg3} />
+						<img src={warImg3} alt='imagesl' />
 					</SwiperSlide>
 					<SwiperSlide>
-						<img src={warImg4} />
+						<img src={warImg4} alt='imagev' />
 					</SwiperSlide>
 					<SwiperSlide>
-						<img src={warImg5} />
+						<img src={warImg5} alt='imagede' />
 					</SwiperSlide>
-					{/* <SwiperSlide>
-						<img src={warImg6} />
-					</SwiperSlide> */}
 				</Swiper>
 			</div>
 		</div>
