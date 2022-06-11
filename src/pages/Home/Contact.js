@@ -72,35 +72,37 @@ const Contact = () => {
 				<div className=''>
 					{/* foorm start */}
 
-					<div class='text-white w-full px-6'>
-						<form ref={form} onSubmit={sendEmail} class='card-body'>
-							<div class='form-control'>
-								<label class='label '>
-									<span class='label-text text-white'>Your Name</span>
+					<div className='text-white w-full px-6'>
+						<form ref={form} onSubmit={sendEmail} className='card-body'>
+							<div className='form-control'>
+								<label className='label '>
+									<span className='label-text text-white'>
+										Your Name
+									</span>
 								</label>
 								<input
 									type='text'
 									name='user_name'
 									placeholder='name'
-									class='input input-bordered text-black w-fu'
+									className='input input-bordered text-black w-fu'
 									required
 								/>
 							</div>
-							<div class='form-control'>
-								<label class='label'>
-									<span class='label-text text-white'>Email</span>
+							<div className='form-control'>
+								<label className='label'>
+									<span className='label-text text-white'>Email</span>
 								</label>
 								<input
 									type='email'
 									name='user_email'
 									placeholder='Enter your email'
-									class='input input-bordered text-black'
+									className='input input-bordered text-black'
 									required
 								/>
 							</div>
-							<div class='form-control'>
-								<label class='label'>
-									<span class='label-text text-white'>
+							<div className='form-control'>
+								<label className='label'>
+									<span className='label-text text-white'>
 										Your message
 									</span>
 								</label>
@@ -108,15 +110,15 @@ const Contact = () => {
 									type='text'
 									name='message'
 									placeholder='Your message'
-									class='input input-bordered text-black'
+									className='input input-bordered text-black'
 									required
 								/>
 							</div>
-							<div class='form-control mt-6'>
+							<div className='form-control mt-6'>
 								<input
 									type='submit'
 									value='Send'
-									class='btn bg-purple-500 hover:bg-black hover:text-purple-500 hover:border-purple-500 hover:border-2'
+									className='btn bg-purple-500 hover:bg-black hover:text-purple-500 hover:border-purple-500 hover:border-2'
 								></input>
 							</div>
 						</form>

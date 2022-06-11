@@ -2,7 +2,6 @@ import React from 'react'
 import ReactTyped from 'react-typed'
 import bannerImg from '../../assets/images/banner.png'
 import Button from '../../components/Button'
-// import Button from '../../components/Button'
 
 const Banner = () => {
 	return (
@@ -31,16 +30,13 @@ const Banner = () => {
 				</p>
 				<div className='mt-8'>
 					<Button>CONTACT</Button>
-					<a
-						href='https://drive.google.com/uc?export=download&id=14WmYp-zdwhhB_Uv9W7i6M6V2V46GVXpO'
-						className='ml-2'
-					>
+					<span className='ml-2'>
 						<Button>
 							<a href='https://drive.google.com/uc?export=download&id=14WmYp-zdwhhB_Uv9W7i6M6V2V46GVXpO'>
 								Resume
 							</a>
 						</Button>
-					</a>
+					</span>
 				</div>
 			</div>
 			<div>

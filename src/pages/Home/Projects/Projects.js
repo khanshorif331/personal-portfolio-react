@@ -17,11 +17,11 @@ const Projects = () => {
 			</div>
 			<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-16'>
 				{/* 1st card */}
-				<div class='card mx-6 md:mx-16 text-white shadow-xl rounded-none'>
+				<div className='card mx-6 md:mx-16 text-white shadow-xl rounded-none'>
 					<figure>
 						<img src={manufactureImg} alt='manufacture web' />
 					</figure>
-					<div class=' bg-black card-body p-0'>
+					<div className=' bg-black card-body p-0'>
 						<div className='flex justify-between'>
 							<a
 								href='https://manufacturer-website-6ea45.web.app/'
@@ -38,7 +38,7 @@ const Projects = () => {
 								Github
 							</a>
 						</div>
-						<h2 class='card-title'>
+						<h2 className='card-title'>
 							<span className='text-purple-500'>
 								Manufacturer Website
 							</span>{' '}
@@ -52,7 +52,7 @@ const Projects = () => {
 						{/* <Link to='/about' className='mx-auto w-full'>
 							<Button>See Details</Button>
 						</Link> */}
-						<Link to='/about'>
+						<Link to='/manufactureDetail'>
 							<button className='w-full mx-auto block bg-white text-black py-2'>
 								See Details
 							</button>
@@ -60,11 +60,11 @@ const Projects = () => {
 					</div>
 				</div>
 				{/* 2nd card */}
-				<div class='card mx-6 md:mx-16 text-white shadow-xl rounded-none'>
+				<div className='card mx-6 md:mx-16 text-white shadow-xl rounded-none'>
 					<figure>
 						<img src={bikeImg} alt='manufacture web' />
 					</figure>
-					<div class=' bg-black card-body p-0'>
+					<div className=' bg-black card-body p-0'>
 						<div className='flex justify-between'>
 							<a
 								href='https://warehouse-management-3798b.web.app/'
@@ -81,7 +81,7 @@ const Projects = () => {
 								Github
 							</a>
 						</div>
-						<h2 class='card-title'>
+						<h2 className='card-title'>
 							<span className='text-purple-500'>
 								Bike Warehouse Management
 							</span>{' '}
@@ -95,7 +95,7 @@ const Projects = () => {
 						{/* <Link to='/about' className='mx-auto w-full'>
 							<Button>See Details</Button>
 						</Link> */}
-						<Link to='/about'>
+						<Link to='/warehouseDetail'>
 							<button className='w-full mx-auto block bg-white text-black py-2'>
 								See Details
 							</button>
@@ -103,11 +103,11 @@ const Projects = () => {
 					</div>
 				</div>
 				{/* 3rd card */}
-				<div class='card mx-6 md:mx-16 text-white shadow-xl rounded-none'>
+				<div className='card mx-6 md:mx-16 text-white shadow-xl rounded-none'>
 					<figure>
 						<img src={dreamImg} alt='manufacture web' />
 					</figure>
-					<div class=' bg-black card-body p-0'>
+					<div className=' bg-black card-body p-0'>
 						<div className='flex justify-between'>
 							<a
 								href='https://dream-event-photography.web.app/'
@@ -124,7 +124,7 @@ const Projects = () => {
 								Github
 							</a>
 						</div>
-						<h2 class='card-title'>
+						<h2 className='card-title'>
 							<span className='text-purple-500'>
 								Dream Event Photography
 							</span>{' '}
@@ -138,7 +138,7 @@ const Projects = () => {
 						{/* <Link to='/about' className='mx-auto w-full'>
 							<Button>See Details</Button>
 						</Link> */}
-						<Link to='/about'>
+						<Link to='/dreamDetail'>
 							<button className='w-full mx-auto block bg-white text-black py-2'>
 								See Details
 							</button>

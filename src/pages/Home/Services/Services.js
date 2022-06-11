@@ -61,7 +61,7 @@ const Services = () => {
 					<SwiperSlide>
 						<div className='p-6 text-white border-2 border-purple-500 '>
 							<FaCode className='h-10 w-10 text-purple-500 mx-auto' />
-							<p class='text-center font-bold text-2xl'>web dev</p>
+							<p className='text-center font-bold text-2xl'>web dev</p>
 							<p className='mt-2'>
 								I develop website.I create high performance website with
 								blazing fast speed.
@@ -72,7 +72,9 @@ const Services = () => {
 					<SwiperSlide>
 						<div className='p-6 text-white border-2 border-purple-500 '>
 							<FaDesktop className='h-10 w-10 text-purple-500  mx-auto' />
-							<p class='text-center font-bold text-2xl'>web design</p>
+							<p className='text-center font-bold text-2xl'>
+								web design
+							</p>
 							<p className='mt-2'>
 								I develop website.I create high performance website with
 								blazing fast speed.
@@ -83,7 +85,7 @@ const Services = () => {
 					<SwiperSlide>
 						<div className='p-6 text-white border-2 border-purple-500 '>
 							<FaMobileAlt className='h-10 w-10 text-purple-500  mx-auto' />
-							<p class='text-center font-bold text-2xl'>app dev</p>
+							<p className='text-center font-bold text-2xl'>app dev</p>
 							<p className='mt-2'>
 								I develop website.I create high performance website with
 								blazing fast speed.
@@ -94,7 +96,9 @@ const Services = () => {
 					<SwiperSlide>
 						<div className='p-6 text-white border-2 border-purple-500 '>
 							<FaCamera className='h-10 w-10 text-purple-500  mx-auto' />
-							<p class='text-center font-bold text-2xl'>photography</p>
+							<p className='text-center font-bold text-2xl'>
+								photography
+							</p>
 							<p className='mt-2'>
 								I develop website.I create high performance website with
 								blazing fast speed.
@@ -105,7 +109,7 @@ const Services = () => {
 					<SwiperSlide>
 						<div className='p-6 text-white border-2 border-purple-500 '>
 							<FaFile className='h-10 w-10 text-purple-500  mx-auto' />
-							<p class='text-center font-bold text-2xl'>
+							<p className='text-center font-bold text-2xl'>
 								brand identity
 							</p>
 							<p className='mt-2'>

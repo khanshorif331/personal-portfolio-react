@@ -64,29 +64,29 @@ const Navbar = () => {
 	)
 	return (
 		<div className='w-full'>
-			<div class='navbar bg-black flex justify-between md:px-14 md:py-6'>
-				<div class='navbar-start'>
-					<div class='dropdown'>
-						<label tabindex='0' class='btn btn-ghost lg:hidden'>
+			<div className='navbar bg-black flex justify-between md:px-14 md:py-6'>
+				<div className='navbar-start'>
+					<div className='dropdown'>
+						<label tabIndex='0' className='btn btn-ghost lg:hidden'>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
-								class='h-5 w-5 text-white'
+								className='h-5 w-5 text-white'
 								fill='none'
 								viewBox='0 0 24 24'
 								stroke='currentColor'
 							>
 								<path
-									stroke-linecap='round'
-									stroke-linejoin='round'
-									stroke-width='2'
+									strokeLinecap='round'
+									strokeLinejoin='round'
+									strokeWidth='2'
 									d='M4 6h16M4 12h8m-8 6h16'
 								/>
 							</svg>
 						</label>
 						{/* for mobile */}
 						<ul
-							tabindex='0'
-							class='navbar-end menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52'
+							tabIndex='0'
+							className='navbar-end menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52'
 						>
 							{navigation}
 						</ul>
@@ -95,15 +95,17 @@ const Navbar = () => {
 						whileHover={{ scale: 1.3 }}
 						whileTap={{ scale: 1 }}
 						transition={{ duration: 0.1 }}
-						class='btn btn-ghost uppercase text-3xl text-white overflow-hidden'
+						className='btn btn-ghost uppercase text-3xl text-white overflow-hidden'
 					>
 						<span className='text-purple-500'>SHORIF </span>{' '}
 						<span className=''>Islam</span>
 					</motion.a>
 				</div>
-				<div class='navbar-center hidden lg:flex'>
+				<div className='navbar-center hidden lg:flex'>
 					{/* for largee device */}
-					<ul class='menu menu-horizontal p-0 text-white'>{navigation}</ul>
+					<ul className='menu menu-horizontal p-0 text-white'>
+						{navigation}
+					</ul>
 				</div>
 			</div>
 		</div>
