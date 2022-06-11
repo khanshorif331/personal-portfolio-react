@@ -17,7 +17,7 @@ const Projects = () => {
 			</div>
 			<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-16'>
 				{/* 1st card */}
-				<div className='card mx-6 md:mx-16 text-white shadow-xl rounded-none'>
+				<div className='card md:w-4/5 mx-6 md:mx-16 text-white shadow-xl rounded-md p-2 hover:border-2 border-purple-500'>
 					<figure>
 						<img src={manufactureImg} alt='manufacture web' />
 					</figure>
@@ -53,14 +53,14 @@ const Projects = () => {
 							<Button>See Details</Button>
 						</Link> */}
 						<Link to='/manufactureDetail'>
-							<button className='w-full mx-auto block bg-white text-black py-2'>
+							<button className='w-full mx-auto block bg-purple-500 text-white  hover:bg-black hover:text-white hover:border-2 border-purple-500 rounded-md py-2'>
 								See Details
 							</button>
 						</Link>
 					</div>
 				</div>
 				{/* 2nd card */}
-				<div className='card mx-6 md:mx-16 text-white shadow-xl rounded-none'>
+				<div className='card md:w-4/5 mx-6 md:mx-16 text-white shadow-xl rounded-md p-2 hover:border-2 border-purple-500'>
 					<figure>
 						<img src={bikeImg} alt='manufacture web' />
 					</figure>
@@ -96,14 +96,14 @@ const Projects = () => {
 							<Button>See Details</Button>
 						</Link> */}
 						<Link to='/warehouseDetail'>
-							<button className='w-full mx-auto block bg-white text-black py-2'>
+							<button className='w-full mx-auto block bg-purple-500 text-white  hover:bg-black hover:text-white hover:border-2 border-purple-500 rounded-md  py-2'>
 								See Details
 							</button>
 						</Link>
 					</div>
 				</div>
 				{/* 3rd card */}
-				<div className='card mx-6 md:mx-16 text-white shadow-xl rounded-none'>
+				<div className='card md:w-4/5  mx-6 md:mx-16 text-white shadow-xl rounded-md p-2 hover:border-2 border-purple-500'>
 					<figure>
 						<img src={dreamImg} alt='manufacture web' />
 					</figure>
@@ -128,18 +128,14 @@ const Projects = () => {
 							<span className='text-purple-500'>
 								Dream Event Photography
 							</span>{' '}
-							{/* (Full stack){' '} */}
 						</h2>
 						<p>Technology: HTML,CSS,Javascript,React,Node,Mongodb.</p>
 						<p>
-							It's a full stack project.Totally secured and it has role
+							It's only frontend project.Totally secured and it has role
 							based user and admin system.
 						</p>
-						{/* <Link to='/about' className='mx-auto w-full'>
-							<Button>See Details</Button>
-						</Link> */}
 						<Link to='/dreamDetail'>
-							<button className='w-full mx-auto block bg-white text-black py-2'>
+							<button className='w-full mx-auto block bg-purple-500 text-white  hover:bg-black hover:text-white hover:border-2 border-purple-500 rounded-md py-2'>
 								See Details
 							</button>
 						</Link>
