@@ -24,7 +24,7 @@ const ManufactureDetail = () => {
 	return (
 		<div className='text-white'>
 			<h1>Hello Manufacture Detail</h1>
-			<div>
+			<div className='w-full'>
 				<Swiper
 					effect={'coverflow'}
 					grabCursor={true}
