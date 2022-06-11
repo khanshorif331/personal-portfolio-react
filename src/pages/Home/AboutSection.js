@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 const AboutSection = () => {
 	return (
@@ -12,7 +13,13 @@ const AboutSection = () => {
 					AB<span className='text-purple-500'>OU</span>T M
 					<span className='text-purple-500'>E</span>
 				</span>
-				<p className='mt-4'>
+				<p
+					data-aos='fade-left'
+					data-aos-anchor='#example-anchor'
+					data-aos-offset='500'
+					data-aos-duration='500'
+					className='mt-4'
+				>
 					My name is Shoriful Islam.I am from Bangladesh.I am a web
 					developer.I love to explore new things.I am passsionate about
 					Programming.Currently improving my abilities as a Front-End and
@@ -64,13 +71,18 @@ const AboutSection = () => {
 					/>
 				</div>
 			</div>
-			<div className='p-8 md:p-16 w-full h-full'>
+			<motion.div
+				whileHover={{ scale: 0.9 }}
+				whileTap={{ scale: 0.9 }}
+				data-aos='zoom-in'
+				className='p-8 md:p-16 w-full h-full'
+			>
 				<img
 					className='w-full h-full'
 					src='https://flatlogic.github.io/light-blue-vue-admin/img/a5.84f014f0.jpg'
 					alt=''
 				/>
-			</div>
+			</motion.div>
 		</section>
 	)
 }

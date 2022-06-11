@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import manufactureImg from '../../../assets/images/final/ass-12/12.1.png'
 import bikeImg from '../../../assets/images/final/ass-11/11.1.png'
 import dreamImg from '../../../assets/images/final/ass-10/10.1.png'
+import { motion } from 'framer-motion'
 
 const Projects = () => {
 	return (
@@ -17,7 +18,13 @@ const Projects = () => {
 			</div>
 			<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-16'>
 				{/* 1st card */}
-				<div className='card md:w-4/5 mx-6 md:mx-16 text-white shadow-xl rounded-md p-2 hover:border-2 border-purple-500'>
+				<div
+					data-aos='flip-left'
+					// data-aos='fade-right'
+					// data-aos-offset='300'
+					// data-aos-easing='ease-in-sine'
+					className='card md:w-4/5 mx-6 md:mx-16 text-white shadow-xl rounded-md p-2 hover:border-2 border-purple-500'
+				>
 					<figure>
 						<img src={manufactureImg} alt='manufacture web' />
 					</figure>
@@ -60,7 +67,12 @@ const Projects = () => {
 					</div>
 				</div>
 				{/* 2nd card */}
-				<div className='card md:w-4/5 mx-6 md:mx-16 text-white shadow-xl rounded-md p-2 hover:border-2 border-purple-500'>
+				<div
+					data-aos='flip-up'
+					data-aos-duration='2000'
+					delay='300'
+					className='card md:w-4/5 mx-6 md:mx-16 text-white shadow-xl rounded-md p-2 hover:border-2 border-purple-500'
+				>
 					<figure>
 						<img src={bikeImg} alt='manufacture web' />
 					</figure>
@@ -103,10 +115,17 @@ const Projects = () => {
 					</div>
 				</div>
 				{/* 3rd card */}
-				<div className='card md:w-4/5  mx-6 md:mx-16 text-white shadow-xl rounded-md p-2 hover:border-2 border-purple-500'>
-					<figure>
+				<div
+					data-aos='flip-right'
+					className='card md:w-4/5  mx-6 md:mx-16 text-white shadow-xl rounded-md p-2 hover:border-2 border-purple-500'
+				>
+					<motion.figure
+						whileHover={{ scale: 1.1 }}
+						whileTap={{ scale: 0.9 }}
+						data-aos='zoom-in'
+					>
 						<img src={dreamImg} alt='manufacture web' />
-					</figure>
+					</motion.figure>
 					<div className=' bg-black card-body p-0'>
 						<div className='flex justify-between'>
 							<a

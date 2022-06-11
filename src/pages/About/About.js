@@ -64,7 +64,7 @@ const AboutSection = () => {
 					/>
 				</div>
 			</div>
-			<div className='p-8 md:p-16 w-full h-full'>
+			<div data-aos='zoom-in' className='p-8 md:p-16 w-full h-full'>
 				<img
 					className='w-full h-full'
 					src='https://flatlogic.github.io/light-blue-vue-admin/img/a5.84f014f0.jpg'

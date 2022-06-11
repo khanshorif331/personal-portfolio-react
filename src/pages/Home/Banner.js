@@ -2,6 +2,7 @@ import React from 'react'
 import ReactTyped from 'react-typed'
 import bannerImg from '../../assets/images/banner.png'
 import Button from '../../components/Button'
+import { motion } from 'framer-motion'
 
 const Banner = () => {
 	return (
@@ -40,9 +41,14 @@ const Banner = () => {
 				</div>
 			</div>
 			<div>
-				<div className='text-white w-full hidden md:block'>
+				<motion.div
+					whileHover={{ scale: 1.1 }}
+					whileTap={{ scale: 0.9 }}
+					data-aos='zoom-in'
+					className='text-white w-full hidden md:block'
+				>
 					<img className='w-full' src={bannerImg} alt='Reading svg' />
-				</div>
+				</motion.div>
 			</div>
 		</div>
 	)
