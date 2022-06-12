@@ -10,8 +10,8 @@ const AboutSection = () => {
 			<div className='p-8 md:p-16'>
 				<p>Let me introduce myself</p>
 				<span className='text-4xl font-bold border-b-2 pb-0'>
-					AB<span className='text-purple-500'>OU</span>T M
-					<span className='text-purple-500'>E</span>
+					ABOUT
+					<span className='text-purple-500'>ME</span>
 				</span>
 				<p
 					data-aos='fade-left'
