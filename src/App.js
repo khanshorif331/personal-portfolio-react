@@ -1,4 +1,4 @@
-import React, { useEffect, useCallback } from 'react'
+import React, { useEffect, useCallback, useState } from 'react'
 import Particles from 'react-tsparticles'
 import { loadFull } from 'tsparticles'
 import logo from './logo.svg'
@@ -20,8 +20,16 @@ import AboutSection from './pages/Home/AboutSection'
 import Projects from './pages/Home/Projects/Projects'
 import Blogs from './pages/Blogs/Blogs'
 import Footer from './components/Shared/Footer'
+import Loading from './components/Loading'
 
 function App() {
+	// const [loading, setLoading] = useState(false)
+	// useEffect(() => {
+	// 	setLoading(true)
+	// 	setTimeout(() => {
+	// 		setLoading(false)
+	// 	}, 4000)
+	// }, [])
 	const particlesInit = useCallback(main => {
 		loadFull(main)
 	}, [])
@@ -32,6 +40,7 @@ function App() {
 
 	return (
 		<div>
+			{/* {loading && <Loading></Loading>} */}
 			<Particles options={particlesOptions} init={particlesInit} />
 			<Navbar></Navbar>
 			<Routes>
