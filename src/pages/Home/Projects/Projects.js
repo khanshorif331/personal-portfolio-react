@@ -23,12 +23,12 @@ const Projects = () => {
 					// data-aos='fade-right'
 					// data-aos-offset='300'
 					// data-aos-easing='ease-in-sine'
-					className='card md:w-4/5 mx-6 md:mx-16 text-white shadow-xl rounded-md p-2 hover:border-2 border-purple-500'
+					className='bg-white card md:w-4/5 mx-6 md:mx-16 text-white shadow-xl rounded-md p-1 hover:bg-purple-500 border-purple-500'
 				>
 					<figure>
 						<img src={manufactureImg} alt='manufacture web' />
 					</figure>
-					<div className=' bg-black card-body p-0'>
+					<div className=' bg-black card-body p-2'>
 						<div className='flex justify-between'>
 							<a
 								href='https://manufacturer-website-6ea45.web.app/'
@@ -68,15 +68,13 @@ const Projects = () => {
 				</div>
 				{/* 2nd card */}
 				<div
-					data-aos='flip-up'
-					data-aos-duration='2000'
-					delay='300'
-					className='card md:w-4/5 mx-6 md:mx-16 text-white shadow-xl rounded-md p-2 hover:border-2 border-purple-500'
+					data-aos='flip-left'
+					className='bg-white card md:w-4/5 mx-6 md:mx-16 text-white shadow-xl rounded-md p-1 hover:bg-purple-500 border-purple-500'
 				>
 					<figure>
 						<img src={bikeImg} alt='manufacture web' />
 					</figure>
-					<div className=' bg-black card-body p-0'>
+					<div className=' bg-black card-body p-2'>
 						<div className='flex justify-between'>
 							<a
 								href='https://warehouse-management-3798b.web.app/'
@@ -117,16 +115,12 @@ const Projects = () => {
 				{/* 3rd card */}
 				<div
 					data-aos='flip-right'
-					className='card md:w-4/5  mx-6 md:mx-16 text-white shadow-xl rounded-md p-2 hover:border-2 border-purple-500'
+					className='bg-white card md:w-4/5 p-1 mx-6 md:mx-16 text-white shadow-xl rounded-md  hover:bg-purple-500 border-purple-500'
 				>
-					<motion.figure
-						whileHover={{ scale: 1.1 }}
-						whileTap={{ scale: 0.9 }}
-						data-aos='zoom-in'
-					>
+					<figure>
 						<img src={dreamImg} alt='manufacture web' />
-					</motion.figure>
-					<div className=' bg-black card-body p-0'>
+					</figure>
+					<div className=' bg-black card-body p-2'>
 						<div className='flex justify-between'>
 							<a
 								href='https://dream-event-photography.web.app/'
