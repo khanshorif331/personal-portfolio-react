@@ -102,9 +102,7 @@ const Projects = () => {
 							It's a full stack project.Totally secured and it has role
 							based user and admin system.
 						</p>
-						{/* <Link to='/about' className='mx-auto w-full'>
-							<Button>See Details</Button>
-						</Link> */}
+
 						<Link to='/warehouseDetail'>
 							<button className='w-full mx-auto block bg-purple-500 text-white  hover:bg-black hover:text-white hover:border-2 border-purple-500 rounded-md  py-2'>
 								See Details
