@@ -20,9 +20,6 @@ const Projects = () => {
 				{/* 1st card */}
 				<div
 					data-aos='flip-left'
-					// data-aos='fade-right'
-					// data-aos-offset='300'
-					// data-aos-easing='ease-in-sine'
 					className='bg-white card md:w-4/5 mx-6 md:mx-16 text-white shadow-xl rounded-md p-1 hover:bg-purple-500 border-purple-500'
 				>
 					<figure>
@@ -56,9 +53,7 @@ const Projects = () => {
 							It's a full stack project.Totally secured and it has role
 							based user and admin system.
 						</p>
-						{/* <Link to='/about' className='mx-auto w-full'>
-							<Button>See Details</Button>
-						</Link> */}
+
 						<Link to='/manufactureDetail'>
 							<button className='w-full mx-auto block bg-purple-500 text-white  hover:bg-black hover:text-white hover:border-2 border-purple-500 rounded-md py-2'>
 								See Details
